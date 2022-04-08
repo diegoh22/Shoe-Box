@@ -7,10 +7,9 @@
         <div class="row g-0">
             <div class="col-md-6 masthead-text">
                 <!-- Post title goes in these h1 tags -->
-                <h1 class="post-title">
-                </h1>
+                <h1 class="post-title"> {{ post.title }}</h1>
                 <!-- Post author goes before the | the post's created date goes after -->
-                <p class="post-subtitle"> | </p>
+                <p class="post-subtitle">{{ post.author}} | {{post.created_on}} </p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
@@ -79,7 +78,7 @@
         </div>
         <div class="col-md-4 card mb-4  mt-3 ">
             <div class="card-body">
-                
+
                 {% if commented %}
                 <div class="alert alert-success" role="alert">
                     Your comment is awaiting approval
