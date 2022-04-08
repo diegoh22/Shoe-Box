@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['shoebox2.herokuapp.com', 'localhost']
-
+CSRF_TRUSTED_ORIGINS = ['https://8000-diegoh22-shoebox-s1yi3rfv862.ws-eu38.gitpod.io']
 
 # Application definition
 
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'blog',
+    'django_summernote',
 ]
 
 MIDDLEWARE = [
