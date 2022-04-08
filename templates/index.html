@@ -14,7 +14,7 @@
                       <div class="card-body">
                           <div class="image-container">
                               {% if "placeholder" in post.featured_image.url %}
-                              <img class="card-img-too"
+                              <img width ="200px" class="card-img-too"
                               src="https://res.cloudinary.com/dnm87pqvy/image/upload/ar_1:1,b_rgb:262c35,bo_5px_solid_rgb:0d0d0d,c_fill,g_auto,r_max,w_1000/v1649430830/HTB14tZyU3HqK1RjSZJnq6zNLpXaH_ooxfnz.jpg" >
                               {% else %}
                               <img class="card-img-top" src=" {{ post.featured_image.url }}" >

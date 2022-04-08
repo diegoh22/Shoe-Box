@@ -17,7 +17,7 @@
                 {% if "placeholder" in post.featured_image.url %}
                 <img src="https://res.cloudinary.com/dnm87pqvy/image/upload/v1649432966/nike-sb-shoe-boxes-explained-08_thavfy.jpg" width="100%">
                 {% else %}
-                <img src=" {{ post.featured_image.url }}" width="100%">
+                <img src=" {{ post.featured_image.url }}" width="50%">
                 {% endif %}
             </div>
         </div>
@@ -70,16 +70,16 @@
                             {{ comment.created_on }}
                         </span> wrote:
                     </p>
-                    <!-- The body of the comment goes before the | -->
+
                     {{ comment.body | linebreaks }}
                 </div>
-                <!-- Our for loop ends here -->
+
                 {% endfor %}
             </div>
         </div>
         <div class="col-md-4 card mb-4  mt-3 ">
             <div class="card-body">
-                <!-- For later -->
+                
                 {% if commented %}
                 <div class="alert alert-success" role="alert">
                     Your comment is awaiting approval
