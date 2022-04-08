@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+from django.contrib.messages import constants as messages
 if os.path.isfile('env.py'):
     import env
 
@@ -29,6 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+X_FRAME_OPTIONS = ' SAMEORIGIN'
 
 ALLOWED_HOSTS = ['shoebox2.herokuapp.com', 'localhost']
 CSRF_TRUSTED_ORIGINS = ['https://8000-diegoh22-shoebox-s1yi3rfv862.ws-eu38.gitpod.io']
@@ -56,6 +58,14 @@ INSTALLED_APPS = [
 SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
+MESSAGE_TAGS = {
+    messages.DEBUG: 'alert-info',
+    messages.ERROR: 'alert-danger',
+    messages.INFO: 'alert-infor',
+    messages.SUCCESS: 'alert-success',
+    messages.WARNING: 'alert-warning',
+}
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
