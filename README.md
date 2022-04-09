@@ -1,4 +1,5 @@
 #Shoe-BOXS
+![Screenshot 2022-04-09 122623](https://user-images.githubusercontent.com/83575427/162584030-e230cda9-648f-41f2-a7bd-b357163df391.png)
 
 # Introduction
 
@@ -81,14 +82,5 @@ This blog will be use to get togueter a shoe lovers and have a real life convers
  * Add a request section for new posts.
  * more alerts.
 
-    
-
-      
-### Tests
-
-
-    
-
-      
-
+  
 
