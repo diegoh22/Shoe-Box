@@ -61,13 +61,14 @@ class PostDetail(View):
                 "comments": comments,
                 "commented": True,
                 "liked": liked,
-                 "comment_form": CommentForm()
+                "comment_form": CommentForm()
                
             }
         )       
 
 
 class PostLike(View):
+    
     def post(self, request, slug):
         post = get_object_or_404(Post, slug=slug)
 
