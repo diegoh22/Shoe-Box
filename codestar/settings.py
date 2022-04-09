@@ -33,7 +33,7 @@ DEBUG = True
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = ['shoebox2.herokuapp.com', 'localhost']
-CSRF_TRUSTED_ORIGINS = ['https://diegoh22-shoebox-s1yi3rfv862.ws-eu39.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://diegoh22-shoebox-1zo3lhxy9hx.ws-eu39.gitpod.io']
 
 # Application definition
 
@@ -51,7 +51,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'blog',
-    'django_ajax',
     'crispy_forms',
     'django_summernote',
 ]
@@ -104,12 +103,12 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-#DATABASES = {
+# DATABASES = {
 #   'default': {
 #       'ENGINE': 'django.db.backends.sqlite3',
 #      'NAME': BASE_DIR / 'db.sqlite3',
 #  }
-#}
+# }
 
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))

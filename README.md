@@ -4,23 +4,26 @@
 
 The goal of this project provide people with the best information about the shoes the love, im shoe lover and always try to fin a place where I can read a bit about the hisoty of the shoes and always have to go to a millio pages or google. this blog wil get all the information and will be update with new information and new shoes.
 
+## ideal User
 
+* English speakers.
+* Shoe lovers.
+* Spor lovers.
 
 ### Main features
 
-* Separated dev and production settings
+#### Header.
+The blog have have 4 different tap, one is the Home Page, that also then Logo with as a clickeable part to go to the home page, Log in  page, registarion page, and log out page.
 
-* Example app with custom user model
+#### Footer
+Have the name of the creator fo the page and 3 socila meadia clicleble logs, that will take you to the social media  via link.
 
-* Bootstrap static files included
+#### Comment
+the middle part or the contecnt par have a Comment box, that you can comen a read old coment, also you can like or dislike the post.
 
-* User registration and logging in as demo
+## Surface
 
-* Procfile for easy deployments
-
-* Separated requirements files
-
-* SQLite by default if no env variable is set
+The logo is place to the left witg the sort color on top of the white navigation var that make this look like a dream.
 
 # Usage
 
@@ -51,12 +54,37 @@ This blog will be use to get togueter a shoe lovers and have a real life convers
 ![Screenshot 2022-04-09 123008](https://user-images.githubusercontent.com/83575427/162573158-3089b7e8-cf4a-43a9-9815-4c0094ebbdec.png)
 
 ### Intallation
+ * pip3 install Djangon==3.2
+ * pip install django-allauth
+ * pip install cloudinary
+ * pip install django-crispy-forms
+ * pip install django_summer-note
 
+ ## Apps
+  * allauth
+  * claudinary
+  * crispy forms
+  * djagon summer-note
+  
+
+## Credist
+ * Alex tutor form Conde isntitute.
+ * Ger tutor from Code institute.
+ * Youtube tutorial videos.
+ * cloudynary for the images.
+ * reddit post for lost codes time.
+ * Google, help me a lot.
+
+ ## To do
+ * Went you click like the page still reload, implement this.
+ * Have a back ground sold music.
+ * Add a request section for new posts.
+ * more alerts.
 
     
 
       
-### 
+### Tests
 
 
     
