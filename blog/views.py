@@ -3,6 +3,7 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm
+from django_ajax.decorators import ajax
 
 
 class PostList(generic.ListView):
