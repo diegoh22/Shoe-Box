@@ -40,7 +40,7 @@
                             <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
                                 {% csrf_token %}
                                 {% if liked %}
-                                <button  type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i 
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i 
                                     class="fas fa-heart"></i></button>
 
                                 {% else %}
@@ -56,8 +56,6 @@
                             {% endif %}
                             <span class="text-secondary"> {{ post.number_of_likes }} </span>
                         </strong>
-                        <!-- The number of likes goes before the closing strong tag -->
-                        
                     </div>
                     <div class="col-1">
                         {% with comments.count as total_comments %}
